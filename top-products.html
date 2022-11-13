@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Star</title>
+    <script src="https://kit.fontawesome.com/ea7d257512.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://i.imgur.com/09RcnST.png" >
+
+
+   
+    
+    <style>
+        html{
+            font-size: 62.5%; 
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .main_container{
+            height: 100vh;
+            width: 100vw;
+            
+            /* --- DIV center ---- */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 36rem;
+            height: 56rem;
+            
+            /* margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1rem; */
+
+        }
+
+        .contentItemCarrusel{
+            height: 56rem;
+            overflow: hidden;
+        }
+
+
+        .itemCarrusel{
+            height: 100%;
+            position: relative;
+        }
+
+        .tarjetaCarrusel{
+            /* background-color: blue; */
+            height: 100%;
+
+        }
+
+        .flechasCarrusel{
+            
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+
+        
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight:bold;
+            color: gray;
+
+        }
+
+        a:hover{
+            color: black;
+        }
+
+        i{
+            
+            width: 2rem;
+            height: 2rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            
+           
+            font-size: 2rem;
+            font-weight: bold;
+            
+            text-align: center;
+            
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        i:hover{
+            background-color: white;
+            color: black;
+        }
+
+        #point{
+            
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+            
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+
+
+        /* .overlay{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background-color: rgba(92, 95, 236, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buy-btn{
+            width: 16rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF;
+            color: #252525;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+            border-radius: 2rem;
+            box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.2);
+            z-index: 200;
+            
+        }
+
+        .buy-btn:hover a{
+            color: #FFFFFF; 
+            background-color: #f15fa3;
+            transition: all ease 0.3s;
+            
+        }
+
+        .overlay{
+            visibility: hidden;
+            
+        } */
+
+
+        .detail-box{
+            width: 100%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:small;
+            
+        }
+
+        .type{
+            display: flex;
+            flex-direction: column;
+        }
+        .type a{
+            color: #222222;
+            margin: 0.5rem 0rem;
+            letter-spacing: 0.05rem;
+            padding:0.8rem ; 
+            
+        }
+
+        .text span{
+            color: rgba(26, 26, 26, 0.5);
+        }
+
+        .price {
+            color: #333333;
+            font-weight: 600;
+            font-size: 1.1rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 0.05rem;
+             
+        }
+
+
+
+
+
+
+        .item1:hover  .overlay{
+            visibility: visible;
+            animation: fade 0.9s;
+        }
+
+        .coste{
+            background-color: blueviolet;
+            height: 50px;
+            width: 50px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main_container">
+
+        <div class="container ">
+
+            <div class="contentItemCarrusel">
+
+                <!-- ITEM 1 -->
+
+                <div class="item1 itemCarrusel" id="itemCarrusel-1">
+
+                    <div class="img_container tarjetaCarrusel " id="tarjetaCarrusel1">
+                        
+                        <!-- <img  src="assets/E-slider-images/2.jpg" alt="imagen uno" class="slider__img"> -->
+                        <a href="https://wa.me/527771867872/?text=Hello%20dear%20I%20liked%20your%20product!%20;)%20" target="_blank"><img src="https://i.imgur.com/LOw8slM.jpg" title="source: imgur.com" /></a>
+                        
+                    </div>
+
+                      
+                    
+    
+                    <div class="arrows flechasCarrusel">
+    
+                        
+
+                        <div class="detail-box">
+
+                            <div>
+                                <a href="#itemCarrusel-3">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </a>
+            
+                                <a href="#itemCarrusel-2">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div><br><br>
+            
+                            <div class="type">
+                                <a href="#">T-Shirt <br> "ETERNITY"</a>
+                                <span>Noe Arrived</span>
+                            </div>
+                            <a href="https://wa.me/527771867872/?text=Hola.%20Si%20te%20gusto%20nuestro%20producto%20muestra,%20envía%20este%20mensaje%20para%20contactarte.%20Saludos%20ʕ•́ᴥ•̀ʔっ%20@erwindevdesign%20id:%20031-9802" target="_blank" class="Price" style=" font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(225, 120, 120); font-size: 1.7rem">$ 13.00</a>
+                            
+                
+                        </div>
+    
+                    </div>
+
+                    
+
+                   <!--  <div class="overlay">
+                        <a href="#" class="buy-btn" id="buy-btn">Buy Now!</a>
+                    </div>   -->
+    
+                </div>
+
+                <!-- ITEM 2 -->
+
+                <div class="item1 itemCarrusel" id="itemCarrusel-2">
+
+                    <div class="img_container tarjetaCarrusel" id="tarjetaCarrusel2">
+                        <a href=""><img src="https://i.imgur.com/vUoIfe8.jpg" title="" /></a>
+                    </div>
+    
+                    <div class="arrows flechasCarrusel">
+
+                        <div class="detail-box">
+
+                            <div>
+                                <a href="#itemCarrusel-1">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </a>
+            
+                                <a href="#itemCarrusel-3">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div><br><br>
+            
+                            <div class="type">
+                                <a href="#">Dress <br> "LIGHT"</a>
+                                <span>AVINCI</span>
+                            </div>
+                            <a href="https://wa.me/527771867872/?text=Hola.%20Si%20te%20gusto%20nuestro%20producto%20muestra,%20envía%20este%20mensaje%20para%20contactarte.%20Saludos%20ʕ•́ᴥ•̀ʔっ%20@erwindevdesign%20id:%20031-9802" target="_blank" class="Price" style=" font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(225, 120, 120); font-size: 1.7rem">$ 20.00</a>
+                            
+                
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    
+                    
+    
+                </div>
+
+                <!-- ITEM 3 -->
+
+                <div class="item1 itemCarrusel" id="itemCarrusel-3">
+
+                    <div class="img_container tarjetaCarrusel" id="tarjetaCarrusel3">
+                        <a href=""><img src="https://i.imgur.com/C8Btn4M.jpg" title="image 3" /></a>
+                    </div>
+    
+                    <div class="arrows flechasCarrusel">
+
+                        <div class="detail-box">
+
+                            <div>
+                                <a href="#itemCarrusel-2">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </a>
+            
+                                <a href="#itemCarrusel-1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div><br><br>
+            
+                            <div class="type">
+                                <a href="#">Jumper <br> Clothes </a>
+                                <span>NERD</span>
+                            </div>
+                            <a href="https://wa.me/527771867872/?text=Hola.%20Si%20te%20gusto%20nuestro%20producto%20muestra,%20envía%20este%20mensaje%20para%20contactarte.%20Saludos%20ʕ•́ᴥ•̀ʔっ%20@erwindevdesign%20id:%20031-9802" target="_blank" class="Price" style=" font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(225, 120, 120); font-size: 1.7rem">$ 23.00</a>
+                            
+                            
+
+                            
+                
+                        </div>
+    
+                       
+    
+                    </div>
+    
+                </div>
+
+
+                <!-- ITEM 4 -->
+
+                <div class="item1 itemCarrusel" id="itemCarrusel-3">
+
+                    <div class="img_container tarjetaCarrusel" id="tarjetaCarrusel3">
+                        <a href=""><img src="https://i.imgur.com/C8Btn4M.jpg" title="image 3" /></a>
+                    </div>
+    
+                    <div class="arrows flechasCarrusel">
+
+                        <div class="detail-box">
+
+                            <div>
+                                <a href="#itemCarrusel-2">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </a>
+            
+                                <a href="#itemCarrusel-1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div><br><br>
+            
+                            <div class="type">
+                                <a href="#">Jumper <br> Clothes </a>
+                                <span>NERD</span>
+                            </div>
+                            <a href="https://wa.me/527771867872/?text=Hola.%20Si%20te%20gusto%20nuestro%20producto%20muestra,%20envía%20este%20mensaje%20para%20contactarte.%20Saludos%20ʕ•́ᴥ•̀ʔっ%20@erwindevdesign%20id:%20031-9802" target="_blank" class="Price" style=" font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(225, 120, 120); font-size: 1.7rem">$ 23.00</a>
+                            
+                            
+                
+                        </div>
+    
+                       
+    
+                    </div>
+    
+                </div>
+
+
+
+            </div>
+            <div id="point">
+                <a href="#itemCarrusel-1">°</a>
+                <a href="#itemCarrusel-2">°</a>
+                <a href="#itemCarrusel-3">°</a>
+                <!-- <a href="#itemCarrusel-4">°</a>
+                <a href="#itemCarrusel-5">°</a>
+                <a href="#itemCarrusel-6">°</a>
+                <a href="#itemCarrusel-7">°</a>
+                <a href="#itemCarrusel-8">°</a> -->
+                
+            </div>
+
+              
+            
+
+<!--             <a class="coste" href="https://wa.me/527771867872/?text=Hello%20dear%20I%20liked%20your%20product!%20;)%20" target="_blank">0</a>
+ -->
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My products - Slider</title>
+
+    <style>
+        html{
+            font-size: 62.5%; 
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #eef8ff;
+            
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .logo{
+            height: 25vh;
+            position: relative;
+        }
+
+        .logo img{
+            height: 50%;
+            position:relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        
+        .box{
+            width: 30rem;
+            box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.2);
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+        .slider__section{
+            width: 30rem;
+            /* height: 50vh; */
+            box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.2);
+            border-radius: 1.5rem;
+            /* overflow: hidden; */
+            
+            
+        }
+
+       
+        
+
+        .slide-img{
+            height: 45rem;
+            border-radius: 1.5rem 1.5rem 0 0;
+            
+        }
+        .slide-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-sizing: border-box;
+        }
+
+        .detail-box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:small;
+        }
+
+        .type{
+            display: flex;
+            flex-direction: column;
+        }
+        .type a{
+            color: #222222;
+            margin: 0.5rem 0rem;
+            font-weight: 70rem;
+            letter-spacing: 0.05rem;
+            padding:0.8rem ; 
+            
+        }
+
+        .text span{
+            color: rgba(26, 26, 26, 0.5);
+        }
+
+        .price {
+            color: #333333;
+            font-weight: 600;
+            font-size: 1.1rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 0.05rem;
+             
+        }
+
+        .slider{
+            display:flex;
+            
+            
+        }
+
+        .container-slader{
+            overflow: hidden;
+        }
+
+        .slider__btn{
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2.9rem;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+            color: gray;
+            
+        }
+
+        .slider__btn:hover {
+            background: #fff;
+            color: #333333;
+        }
+
+        .slider__btn--left{
+            left: 1rem;
+        }
+
+        .slider__btn--right{
+            right: 1rem;
+
+        }
+
+        
+
+    </style>
+
+    <script>
+
+        const slider = document.querySelector("#slider"); 
+
+        let sliderSection = document.querySelectorAll(".slider-img");
+
+        let sliderSectionLast = sliderSection[sliderSection.length -1];
+
+        const btnLeft = document.querySelector("#btn-left")
+        const btnRight = document.querySelector("#btn-right")
+
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast)
+
+
+    </script>
+</head>
+<body >
+
+    <div class="logo">
+
+        <img src="assets/E-slider-images/logo.png" alt="">
+    </div>
+
+    <div class="container-slider">
+
+        <div class="slider" id="slider">
+
+            <div class="slider__section">
+
+                <div class="slide-img slider__section">
+                    <img src="assets/E-slider-images/1.jpg" alt="1" class="slider__img">
+                    <div class="overlay">
+                        <a href="#" class="buy-btn">Buy Now!</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+        
+                    <div class="type">
+                        <a href="#">Rabbed Cardigan</a>
+                        <span>Noe Arrived</span>
+                    </div>
+                    <a href="#" class="Price">$ 23.00</a>
+                    
+        
+                </div>
+
+            </div>
+
+            
+            <!-- <div class="slider__section">
+
+                <div class="slide-img slider__section">
+                    <img src="assets/E-slider-images/2.jpg" alt="2" class="slider__img">
+                    <div class="overlay">
+                        <a href="#" class="buy-btn">Buy Now!</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+        
+                    <div class="type">
+                        <a href="#">Rabbed Cardigan</a>
+                        <span>Noe Arrived</span>
+                    </div>
+                    <a href="#" class="Price">$ 23.00</a>
+                    
+        
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="slider__section">
+
+                <div class="slide-img slider__section">
+                    <img src="assets/E-slider-images/3.jpg" alt="3" class="slider__img">
+                    <div class="overlay">
+                        <a href="#" class="buy-btn">Buy Now!</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+        
+                    <div class="type">
+                        <a href="#">Rabbed Cardigan</a>
+                        <span>Noe Arrived</span>
+                    </div>
+                    <a href="#" class="Price">$ 23.00</a>
+                    
+        
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="slider__section">
+
+                <div class="slide-img slider__section">
+                    <img src="assets/E-slider-images/4.jpg" alt="4" class="slider__img">
+                    <div class="overlay">
+                        <a href="#" class="buy-btn">Buy Now!</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+        
+                    <div class="type">
+                        <a href="#">Rabbed Cardigan</a>
+                        <span>Noe Arrived</span>
+                    </div>
+                    <a href="#" class="Price">$ 23.00</a>
+                    
+        
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="slider__section">
+
+                <div class="slide-img slider__section">
+                    <img src="assets/E-slider-images/5.jpg" alt="5" class="slider__img">
+                    <div class="overlay">
+                        <a href="#" class="buy-btn">Buy Now!</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+        
+                    <div class="type">
+                        <a href="#">Rabbed Cardigan</a>
+                        <span>Noe Arrived</span>
+                    </div>
+                    <a href="#" class="Price">$ 23.00</a>
+                    
+        
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="slider__section">
+
+                <div class="slide-img slider__section">
+                    <img src="assets/E-slider-images/6.jpg" alt="6" class="slider__img">
+                    <div class="overlay">
+                        <a href="#" class="buy-btn">Buy Now!</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+        
+                    <div class="type">
+                        <a href="#">Rabbed Cardigan</a>
+                        <span>Noe Arrived</span>
+                    </div>
+                    <a href="#" class="Price">$ 23.00</a>
+                    
+        
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="slider__section">
+
+                <div class="slide-img slider__section">
+                    <img src="assets/E-slider-images/7.jfif" alt="7" class="slider__img">
+                    <div class="overlay">
+                        <a href="#" class="buy-btn">Buy Now!</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+        
+                    <div class="type">
+                        <a href="#">Rabbed Cardigan</a>
+                        <span>Noe Arrived</span>
+                    </div>
+                    <a href="#" class="Price">$ 23.00</a>
+                    
+        
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="slider__section">
+
+                <div class="slide-img slider__section">
+                    <img src="assets/E-slider-images/8.jfif" alt="8" class="slider__img">
+                    <div class="overlay">
+                        <a href="#" class="buy-btn">Buy Now!</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+        
+                    <div class="type">
+                        <a href="#">Rabbed Cardigan</a>
+                        <span>Noe Arrived</span>
+                    </div>
+                    <a href="#" class="Price">$ 23.00</a>
+                    
+        
+                </div>
+
+            </div> -->
+
+
+
+            <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
