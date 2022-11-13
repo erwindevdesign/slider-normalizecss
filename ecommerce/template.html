@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Start Products</title>
+    <style>
+        html{
+            font-size: 62.5%; 
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #eef8ff;
+        }
+
+        .main_container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aquamarine;
+            /* --- DIV center ---- */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 36rem;
+            height: 56rem;
+            background-color: bisque;
+            /* margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1rem; */
+
+        }
+
+        .contentItemCarrusel{
+            border: 2px solid green;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+
+        .itemCarrusel{
+            border: 1px solid black;
+            height: 100%;
+            position: relative;
+        }
+
+        .tarjetaCarrusel{
+            background-color: blue;
+            height: 100%;
+
+        }
+
+        .flechasCarrusel{
+            background-color: rgb(140, 105, 60, 0.4);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+
+        #tarjetaCarrusel1{
+            background-color: blueviolet;
+        }
+
+        #tarjetaCarrusel2{
+            background-color: rgb(43, 226, 95);
+        }
+
+        #tarjetaCarrusel3{
+            background-color: rgb(226, 95, 43);
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main_container">
+
+        <div class="container ">
+
+            <div class="contentItemCarrusel">
+
+                <!-- ITEM 1 -->
+
+                <div class="item1 itemCarrusel" id="itemCarrusel-1">
+
+                    <div class="img_container tarjetaCarrusel" id="tarjetaCarrusel1">
+                        A
+                    </div>
+    
+                    <div class="arrows flechasCarrusel">
+    
+                        <a href="#itemCarrusel-3">
+                            <i class="left">
+                                <
+                            </i>
+                        </a>
+    
+                        <a href="#itemCarrusel-2">
+                            <i class="right">
+                                >
+                            </i>
+                        </a>
+    
+                    </div>
+    
+                </div>
+
+                <!-- ITEM 2 -->
+
+                <div class="item1 itemCarrusel" id="itemCarrusel-2">
+
+                    <div class="img_container tarjetaCarrusel" id="tarjetaCarrusel2">
+                        B
+                    </div>
+    
+                    <div class="arrows flechasCarrusel">
+    
+                        <a href="#itemCarrusel-1">
+                            <i class="left">
+                                <
+                            </i>
+                        </a>
+    
+                        <a href="#itemCarrusel-3">
+                            <i class="right">
+                                >
+                            </i>
+                        </a>
+    
+                    </div>
+    
+                </div>
+
+                <!-- ITEM 3 -->
+
+                <div class="item1 itemCarrusel" id="itemCarrusel-3">
+
+                    <div class="img_container tarjetaCarrusel" id="tarjetaCarrusel3">
+                        C
+                    </div>
+    
+                    <div class="arrows flechasCarrusel">
+    
+                        <a href="#itemCarrusel-2">
+                            <i class="left">
+                                <
+                            </i>
+                        </a>
+    
+                        <a href="#itemCarrusel-1">
+                            <i class="right">
+                                >
+                            </i>
+                        </a>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
