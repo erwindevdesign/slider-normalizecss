@@ -1,6 +1,6 @@
 # Slider-imag CSS (webkit - reset.css - good practice writing code)
 
-Este slider se utilizara en la exploración de diversas interpretaciones de **estilos css** que realizan los navegadores, permitiendo hacer uso se **prefijos css** para la comprensión espesifica de estilos soportados por el navegador, reseteo de estilos predominantes de cada navegador con un **reset.css** y **buenas prácticas** de escritura en código que facilitaran la interpretación de nuestros estilos.
+Este slider se utilizará en la exploración de diversas interpretaciones de **estilos css** que realizan los navegadores, permitiendo hacer uso se **prefijos css** para la comprensión espesifica de estilos soportados por el navegador, reseteo de estilos predominantes de cada navegador con un **reset.css** y **buenas prácticas** de escritura en código que facilitaran la interpretación de nuestros estilos.
 
 
 
