@@ -18,7 +18,7 @@ Este proyecto se utilizará en la exploración de diversas interpretaciones de e
 
 La gran variedad de servidores para la navegación web ha requerido de estandarizar constantemente en busca de una armonía en la representación de código en diferentes navegadores web permitiendo interpreta rel código de una forma muy similar en diferentes navegadores.
 
-Dentro de esta interpretación unificada podremos implementar buEnas practicas de escritura de codigo para facilitar esta interpretación, prefijos CSS que permitan ser comprendidos exclusivamente por un navegador en concreto y un archivo reset.css que reseteára los estilos preestablesifdos en cada navegador diferente peminitiendo partir de una estructura en blanco.
+Dentro de esta interpretación unificada podremos implementar buenas practicas de escritura de código para facilitar esta interpretación, prefijos CSS que permitan ser comprendidos exclusivamente por un navegador en concreto y un archivo reset.css que restaurará los estilos preestablecidos en cada navegador diferente permitiendo partir de una estructura en blanco sin estilos predefinidos.
 
 ## Buenas Practicas
 
@@ -65,7 +65,7 @@ nav-menu { padding: 2em; border: 2px solid green; }
 div p {  color: red; }
 ~~~
 
-5. Abrebiar los propiedades dentro de una sola declaración.
+5. Abreviar los propiedades dentro de una sola declaración.
 
 ~~~CSS
 /* Propiedades margin-left, margin-right y margin-top */
@@ -74,19 +74,19 @@ div p {  color: red; }
 .ṇav-menu {margin: 5px 5px 0px 5px;}
 ~~~
 
-6. Probar diseño en diferentes navegadores. Este testeo de implementación arrojara diferentes caracteristicas a alinear si se requiere una interpretación de estilos similar en todos los navegadores.
+6. Probar diseño en diferentes navegadores. Este testeo de implementación arrojara diferentes características a alinear si se requiere una interpretación de estilos similar en todos los navegadores.
 
-También puedes hacer uso de la aplicación browserling que te permite ver tu desarrollo en varias versiones diferentes de cada navegador. 
+7. También se puede hacer uso de la aplicación browserling que te permite ver tu desarrollo en varias versiones diferentes de cada navegador. 
 
     https://www.browserling.com/
 
-7. Validar estilos mediante herrramientas como: 
+8. Validar estilos mediante herramientas como: 
 
-**W2C-CSS**
+	*W2C-CSS**
 
     https://jigsaw.w3.org/css-validator/
 
-8. Y por ultimo agregar prefijos CSS para propiedades de estilos que tofdavía no son estables.
+9. Y por ultimo agregar prefijos CSS para propiedades de estilos que todavía no son estables.
 
 Existen herramientas como **caniuse.com** que nos indicas el soporte de ciertas etiquetas y estructuras par aque el código sea interpretado como los estilos determinen y no como el navegador permita.
 
