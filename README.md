@@ -1,8 +1,6 @@
 # Slider-imag CSS (webkit - reset.css - good practice writing code)
 
-Este slider se utilizará en la exploración de diversas interpretaciones de **estilos css** que realizan los navegadores, permitiendo hacer uso se **prefijos css** para la comprensión espesifica de estilos soportados por el navegador, reseteo de estilos predominantes de cada navegador con un **reset.css** y **buenas prácticas** de escritura en código que facilitaran la interpretación de nuestros estilos.
-
-
+Este proyecto se utilizará en la exploración de diversas interpretaciones de estilos css que realizan los navegadores, permitiendo hacer uso de prefijos css para la comprensión especifica de estilos soportados por el navegador, reinicio en blanco de los estilos predominantes de cada navegador con un reset.css y buenas prácticas de escritura en código que facilitaran la interpretación de los estilos aplicados.
 
 <p align='center'>
 <a>
@@ -16,15 +14,15 @@ Este slider se utilizará en la exploración de diversas interpretaciones de **e
 </p>
 
 
-## Prefijos y RESET CSS
+## Prefijos y reset.css
 
-La gran variedad de servidores para la navegación web y el crecimiento caotico-competitivo-diferencial en el entorno web ha requerido de estandarizaciones constantes en busca de una armonia en la representación de código en diferentes navegadores web permitiendo interpreta rel código de una forma muy similar en diferentes navegadores.
+La gran variedad de servidores para la navegación web ha requerido de estandarizar constantemente en busca de una armonía en la representación de código en diferentes navegadores web permitiendo interpreta rel código de una forma muy similar en diferentes navegadores.
 
-Dentro de esta interpretación unificada podremos implementar bunas practicas de escritura de codigo para facilitar esta interpretación, prefijos CSS que permitan ser comprendidos exclusivamente por un navegador en concreto y un reset.css que reseteára los estilos preestablesifdos en cada navegador diferente peminitiendo partir de una estructura en blanco.
+Dentro de esta interpretación unificada podremos implementar buEnas practicas de escritura de codigo para facilitar esta interpretación, prefijos CSS que permitan ser comprendidos exclusivamente por un navegador en concreto y un archivo reset.css que reseteára los estilos preestablesifdos en cada navegador diferente peminitiendo partir de una estructura en blanco.
 
 ## Buenas Practicas
 
-1. Organizar la estructura del código de estilos de manera desenciente para facilitar la ubicación de los mismos.
+1. Organizar la estructura del código de estilos de manera descendiente para facilitar la ubicación de los mismos.
 
 ~~~CSS
 /****** generic classes*******/
@@ -51,7 +49,7 @@ Evitar: #1div, .=div, DivContent
 Mejor utilizar: #div1, .div, divContent
 ~~~
 
-3. Uso de **guiones**. Es recoment¿dable evitar el uso de guiones bajos **"_"** para la construccion de nombres ya que algunos navegadores no lo soportan.
+3. Uso de **guiones**. Es recomendable evitar el uso de guiones bajos **"_"** para la construcción de nombres ya que algunos navegadores no lo soportan.
 
 ~~~CSS
 /* Opción 1: Palabras separadas por mayúsculas */
@@ -100,7 +98,7 @@ Existen herramientas como **caniuse.com** que nos indicas el soporte de ciertas 
 
 ## Prefijos CSS
 
-Los prefijos para navegadores se anteponene al estilo CSS detinado a que dicho estilo sea leido y aplicado exclsivamente por un navegador en concreto. 
+Los prefijos para navegadores se anteponen al estilo CSS destinado a que dicho estilo sea leído y aplicado exclusivamente por un navegador en concreto. 
 
 | Prefijo | Navegador |
 | -- | -- |
@@ -110,9 +108,9 @@ Los prefijos para navegadores se anteponene al estilo CSS detinado a que dicho e
 | -ms- | Microsoft Internet Explorer |
 
 
-## RESET file
+###  reset file
 
-Algunos archivos resec files son los siquientes:
+Algunos archivos ejemplos de resect.css files son los siguientes:
 
 ~~~CSS
 
